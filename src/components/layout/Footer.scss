@@ -1,0 +1,45 @@
+@import '../../sass/main.scss';
+
+.footer {
+    grid-area: footer;
+
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    grid-template-areas: 'byline' 'social';
+    grid-gap: $spacing-xs;
+
+    text-align: center;
+
+    @include mq(lg) {
+        grid-template-columns: max-content 1fr max-content;
+        grid-template-rows: auto;
+        grid-template-areas: 'byline . social';
+    }
+}
+
+.byline {
+    grid-area: byline;
+}
+
+.social {
+    grid-area: social;
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline;
+        margin: 0 0.5rem;
+        font-size: 1.4rem;
+    }
+
+    &__link {
+        color: var(--clr-yellow);
+        transition: all ease-in-out 250ms;
+
+        &:hover {
+            color: var(--clr-light);
+        }
+    }
+}

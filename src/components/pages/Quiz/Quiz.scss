@@ -1,0 +1,7 @@
+@import '../../../sass/main.scss';
+
+.quiz {
+    grid-area: body;
+
+    padding: $spacing-sm;
+}

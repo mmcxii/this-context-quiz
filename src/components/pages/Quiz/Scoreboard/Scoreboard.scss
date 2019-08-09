@@ -1,0 +1,11 @@
+@import '../../../../sass/main.scss';
+.scoreboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: column;
+    text-align: center;
+
+    &__card {
+        margin: $spacing-sm 0;
+    }
+}

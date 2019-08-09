@@ -1,0 +1,7 @@
+@import '../abstract/variables';
+
+.section {
+    &__title {
+        margin-bottom: $spacing-xs;
+    }
+}

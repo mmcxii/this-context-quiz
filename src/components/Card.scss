@@ -1,0 +1,24 @@
+@import '../sass/main.scss';
+
+.card {
+    width: 100%;
+    border-radius: $rounded;
+    background: var(--clr-dark-2);
+    box-shadow: 5px 5px 5px -3px var(--clr-yellow);
+    overflow: hidden;
+
+    &__title,
+    &__body {
+        padding: $spacing-md;
+    }
+
+    &__title {
+        background-color: var(--clr-dark-3);
+        border-radius: $rounded;
+        text-align: center;
+
+        @include mq(md) {
+            text-align: left;
+        }
+    }
+}

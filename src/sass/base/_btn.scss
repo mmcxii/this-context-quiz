@@ -1,0 +1,16 @@
+.btn {
+    background: var(--clr-yellow);
+    color: var(--clr-dark);
+    border-radius: $rounded;
+    padding: $spacing-xs 0;
+    margin: $spacing-xs 0;
+    border: none;
+    font-weight: bolder;
+    display: block;
+    width: 100%;
+    transition: all ease-in-out 250ms;
+
+    &:hover {
+        background: var(--clr-yellow-dark);
+    }
+}

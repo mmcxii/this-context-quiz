@@ -1,0 +1,22 @@
+@import 'sass/main.scss';
+
+html,
+.App {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.App {
+    display: grid;
+    grid-template-columns: var(--sp-container) 1fr var(--sp-container);
+    grid-template-rows: max-content auto max-content;
+    grid-template-areas:
+        '. header .'
+        '. body .'
+        '. footer .';
+
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    padding: $spacing-sm 0;
+    font-family: 'Roboto Mono', monospace;
+}

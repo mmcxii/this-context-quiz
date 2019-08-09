@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+//* Breakpoints
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+);
+
+//* Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+
+//* Styling
+$rounded: 10px;
+
+:root {
+    //* Colors
+    --clr-dark: #333;
+    --clr-dark-2: #222;
+    --clr-dark-3: #111;
+    --clr-light: #eee;
+    --clr-yellow: #f0db4f;
+    --clr-yellow-dark: #d7c236;
+
+    //* Layout
+    --sp-container: 1rem;
+
+    @include mq(md) {
+        --sp-container: 2rem;
+    }
+
+    @include mq(lg) {
+        --sp-container: 4rem;
+    }
+
+    @include mq(xl) {
+        --sp-container: 20%;
+    }
+}

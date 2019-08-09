@@ -1,0 +1,12 @@
+@import '../abstract/variables';
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: all ease-in-out 250ms;
+
+    &:hover,
+    &:focus {
+        color: var(--clr-yellow);
+    }
+}
